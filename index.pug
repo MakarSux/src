@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./styles/reset.css")
+        link(rel="stylesheet", href="./styles/main.css")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
+        //- script(src="./js/swiper.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
+        title ShaareyTzedek
+    body
+        include modules/header
+        include modules/banner
+        .wrapper
+            include modules/our_projects
+        .blur__background
+            .wrapper
+                include modules/info_block
+        .wrapper
+                include modules/news_block
+        include modules/footer
