@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+    include modules/head
+    title ShaareyTzedek
+    body
+        .header.btn-black
+            include modules/header
+        .wrapper.wrapper-oth-p
+            
+            h1.block__naming НАШИ ПРОЕКТЫ
+            
+            p.block_description
+                | Здоровая община начинается со здоровых людей — тело, ум и душа. Получая поддержку через сеть оздоровительных и досуговых общинных программ, которые предлагает «Шаарей Цедек», еврейские семьи и пожилые люди начинают жить здоровой, полноценной жизнью. Особенно надо отметить такие программы как «Обеды на колёсах», «Скорая помощь», «Патронаж», «Цдака.ру» и другие.
+                br
+                br
+                | Многолетний опыт деятельности в области благотворительности позволил нашему фонду найти новые формы работы, благодаря которым выявлен новый потенциал этих программ. В нашей работе мы руководствуемся принципами индивидуального подхода при оказании помощи. 
+                br
+                br
+                | Взаимодействие наших благотворительных программ обеспечивает полноценное питание, физический тонус, творческое выражение, и интеллектуальное развитие каждого клиента, пришедшего в центр.            
+            
+
+            .block__subnaming
+                .line
+                p.subnaming Благотворительность
+                .line
+
+
+            .block__accordion
+                .row
+                    .col
+                        .tabs
+                            .tab
+                                input#chck1.tab-check(type='checkbox')
+                                label.tab-label(for='chck1') Экстренная служба
+                                .tab-content Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+                                    
+                            .tab
+                                input#chck2.tab-check(type='checkbox')
+                                label.tab-label(for='chck2') Патронажная служба
+                                .tab-content Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+
+                            .tab
+                                input#chck3.tab-check(type='checkbox')
+                                label.tab-label(for='chck3') Экстренная помощь
+                                .tab-content Помощь в экстренных ситуациях взрослым: приобретение жизненно необходимых лекарственных препаратов, бытовой техники; возмещение медицинских услуг. Программа «Экстренная помощь»  Часы приема: с 5-го по 20-е число каждого месяца, понедельник-четверг с 10:00 до 14:00, пятница – не приемный день.
+
+                            .tab
+                                input#chck4.tab-check(type='checkbox')
+                                label.tab-label(for='chck4') Банковская карта
+                                .tab-content Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+
+                    
+            script.
+                Fancybox.bind('[data-fancybox]', {});
+        include modules/footer
